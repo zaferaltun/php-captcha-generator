@@ -1,7 +1,7 @@
 <?php
     session_start();
-
-    if (sizeof($_POST) && $_POST["username"] && $_POST["password"] && $_POST["captcha"]){
+    
+    if (sizeof($_POST)){
         if ($_POST["captcha"] == $_SESSION["securityCode"]){
             // Burada kullanıcı doğrulaması aşamasına geçilebilir
             // ...
